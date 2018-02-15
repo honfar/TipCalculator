@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="title">Tip Calculator</string>
+    <string name="input_bill_amt">Bill Amount</string>
+    <string name="seek_text">Select Tip Amount</string>
+    <string name="input_diners_no">No. of Diners</string>
+    <string name="output_tip_amount">Tip Amount</string>
+    <string name="output_total_bill">Total Bill</string>
+    <string name="check_box">Divide bill?</string>
+    <string name="but15">15%</string>
+    <string name="but20">20%</string>
+    <string name="but25">25%</string>
+    <string name="but30">30%</string>
+    <string name="barLabel">15</string>
+
+</resources>

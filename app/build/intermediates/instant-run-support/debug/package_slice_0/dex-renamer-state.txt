@@ -1,0 +1,4 @@
+#Thu Feb 15 14:43:18 EST 2018
+base.0=/Users/alec/AndroidStudioProjects/TipCalculatorFix/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex

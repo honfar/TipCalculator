@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alec.tipcalculatorfix.MainActivity">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/giphy"
+        android:layout_below="@id/titleView"
+        android:layout_marginTop="-30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/billAmt"
+        android:layout_marginTop="-20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_bill_amt"
+            android:textSize="20sp"
+            android:layout_marginTop="-10dp"/>
+
+        <EditText
+            android:id="@+id/billAmtInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:layout_marginTop="-10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dinerNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billAmt"
+        android:gravity="center">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_diners_no"/>
+
+        <EditText
+
+            android:id="@+id/dinerNoInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/barLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/barLabel"
+        android:layout_below="@id/dinerNo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barLabel"
+        android:progress="15"
+        android:max="30"/>
+
+
+    <CheckBox
+        android:id="@+id/split"
+        android:text="@string/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek"/>
+
+
+
+    <Button
+        android:id="@+id/beep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="click"
+        android:layout_below="@id/split"
+        android:onClick="buttonPressed"/>
+
+
+    <TextView
+        android:id="@+id/finalAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textSize="30sp"
+        android:layout_below="@id/beep"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
